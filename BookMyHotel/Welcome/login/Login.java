@@ -76,6 +76,7 @@ public class Login
 		panel.add(loginLabel);
 		
 		txtLogin = new JTextField();
+		txtLogin.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		txtLogin.setBounds(281, 185, 136, 25);
 		panel.add(txtLogin);
 		txtLogin.setColumns(10);
@@ -94,6 +95,7 @@ public class Login
 		panel.add(btnSubmit);
 		
 		txtPass = new JPasswordField();
+		txtPass.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		txtPass.addKeyListener(new KeyAdapter()
 		{
 			@Override
@@ -135,6 +137,8 @@ public class Login
 					JOptionPane.showMessageDialog(f, "Successful login");
 				else
 					JOptionPane.showMessageDialog(f, "Invalid login");
+			else
+				JOptionPane.showMessageDialog(f, "Invalid username");
 		}
 		catch(SQLException e)
 		{
