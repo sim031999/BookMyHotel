@@ -9,7 +9,7 @@ import javax.swing.*;
 public class Login
 {
 	Connection conn;
-	private JFrame frame;
+	JFrame frame;
 	private JTextField txtLogin;
 	private JPasswordField txtPass;
 
