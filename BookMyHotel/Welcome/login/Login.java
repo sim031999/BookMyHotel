@@ -24,7 +24,7 @@ public class Login
 			{
 				try
 				{
-					Login window = new Login();
+					Login window = new Login();		//commit
 					window.frame.setVisible(true);
 				} 
 				catch (Exception e)
