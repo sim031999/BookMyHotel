@@ -24,12 +24,12 @@ public class Login
 			{
 				try
 				{
-					Login window = new Login();		//commit
+					Login window = new Login();		
 					window.frame.setVisible(true);
 				} 
 				catch (Exception e)
 				{
-					e.printStackTrace();	//test commit as specified this doesn't make sense.
+					//e.printStackTrace();
 				}
 			}
 		});
@@ -47,7 +47,11 @@ public class Login
 		}
 		catch(SQLException e)
 		{
-			System.out.println("Eerr");
+			JLabel errLabel = new JLabel("Encountered error in establishing "
+					+ "connection to server. Check the server and try again.");
+			errLabel.setFont(new Font("Times New Roman", Font.PLAIN, 17));
+			UIManager.put("Button.background", Color.white);
+			JOptionPane.showMessageDialog(frame, errLabel, "Error",JOptionPane.ERROR_MESSAGE,null);
 		}
 		
 	}
@@ -131,14 +135,29 @@ public class Login
 			Statement stmt = conn.createStatement();
 			String qry = "SELECT password FROM login WHERE username='"+uname+"'";
 			ResultSet rs = stmt.executeQuery(qry);
-		
+			
+			JLabel errLabel = new JLabel("");
+			errLabel.setFont(new Font("Times New Roman", Font.PLAIN, 17));
+			UIManager.put("Button.background", Color.white);
+			
 			if(rs.next())
+			{
 				if(rs.getString(1).equals(pass))
-					JOptionPane.showMessageDialog(f, "Successful login");
+				{
+					errLabel.setText("Successful Login.");
+					JOptionPane.showMessageDialog(f, errLabel);
+				}
 				else
-					JOptionPane.showMessageDialog(f, "Invalid login");
+				{
+					errLabel.setText("Invalid Login.");
+					JOptionPane.showMessageDialog(f, errLabel);
+				}
+			}
 			else
-				JOptionPane.showMessageDialog(f, "Invalid username");
+			{
+				errLabel.setText("Invalid username.");
+				JOptionPane.showMessageDialog(f, errLabel);
+			}
 		}
 		catch(SQLException e)
 		{
