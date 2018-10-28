@@ -75,7 +75,7 @@ public class Login
 		panel.setLayout(null);
 		
 		JLabel loginLabel = new JLabel("Username");
-		loginLabel.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		loginLabel.setFont(new Font("Roboto", Font.PLAIN, 20));
 		loginLabel.setBounds(173, 182, 128, 31);
 		panel.add(loginLabel);
 		
@@ -87,7 +87,7 @@ public class Login
 		
 		JButton btnSubmit = new JButton("Submit");
 		btnSubmit.setBackground(new Color(255, 255, 255));
-		btnSubmit.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		btnSubmit.setFont(new Font("Roboto", Font.PLAIN, 18));
 		btnSubmit.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
@@ -113,7 +113,7 @@ public class Login
 		panel.add(txtPass);
 		
 		JLabel lblPassword = new JLabel("Password");
-		lblPassword.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		lblPassword.setFont(new Font("Roboto", Font.PLAIN, 20));
 		lblPassword.setBounds(173, 250, 128, 31);
 		panel.add(lblPassword);
 		
