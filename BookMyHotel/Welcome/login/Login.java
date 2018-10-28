@@ -67,7 +67,7 @@ public class Login
 		frame.setBounds(100, 100, 900, 800);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frame.getContentPane().setLayout(null);		//test commit
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(151, 117, 583, 529);
