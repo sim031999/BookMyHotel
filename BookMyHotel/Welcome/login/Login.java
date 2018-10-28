@@ -61,6 +61,7 @@ public class Login
 		frame.getContentPane().setBackground(new Color(176, 224, 230));
 		frame.setBackground(Color.WHITE);
 		frame.setBounds(100, 100, 900, 800);
+		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -68,7 +69,6 @@ public class Login
 		panel.setBounds(151, 117, 583, 529);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
-		
 		
 		JLabel loginLabel = new JLabel("Username");
 		loginLabel.setFont(new Font("Times New Roman", Font.PLAIN, 20));
