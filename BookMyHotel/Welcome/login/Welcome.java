@@ -7,7 +7,7 @@ import java.awt.event.*;
 public class Welcome
 {
 
-	private JFrame frame;
+	JFrame frame;
 
 	/**
 	 * Launch the application.
@@ -42,7 +42,7 @@ public class Welcome
 	 * Initialize the contents of the frame.
 	 */
 	
-	private void makeLink(JLabel link)
+	static public void makeLink(JLabel link)
 	{
 		link.setForeground(Color.BLUE.darker());
 		link.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));

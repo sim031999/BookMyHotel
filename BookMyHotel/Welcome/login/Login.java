@@ -117,6 +117,23 @@ public class Login
 		lblPassword.setBounds(173, 250, 128, 31);
 		panel.add(lblPassword);
 		
+		JLabel lblHome = new JLabel("Back to Home");
+		lblHome.addMouseListener(new MouseAdapter() 
+		{
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				Welcome obj = new Welcome();
+				(obj.frame).setVisible(true);
+				frame.dispose();
+			}
+		});
+		lblHome.setForeground(new Color(0, 0, 178));
+		lblHome.setFont(new Font("Roboto", Font.PLAIN, 25));
+		lblHome.setBounds(10, 10, 156, 29);
+		panel.add(lblHome);
+		Welcome.makeLink(lblHome);
+		
 		JLabel lblBookmyhotel = new JLabel("BookMyHotel");
 		lblBookmyhotel.setFont(new Font("Roboto", Font.BOLD, 38));
 		lblBookmyhotel.setBounds(10, 10, 266, 46);
