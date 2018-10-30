@@ -42,7 +42,7 @@ public class Login
 	{
 		try
 		{
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","root");
 			initialize();
 		}
 		catch(SQLException e)

@@ -10,7 +10,7 @@ public class Welcome
 	JFrame frame;
 
 	/**
-	 * Launch the application.
+	 * Launch the application."jjgkj
 	 */
 	public static void main(String[] args)
 	{
@@ -96,7 +96,7 @@ public class Welcome
 		JLabel lblTitle = new JLabel("BookMyHotel");
 		lblTitle.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTitle.setFont(new Font("Roboto", Font.BOLD, 49));
-		lblTitle.setBounds(10, -78, 300, 246);
+		lblTitle.setBounds(10, -78, 339, 246);
 		frame.getContentPane().add(lblTitle);
 		
 		JLabel lblSubtitle = new JLabel("A one-stop solution for all your hotel-booking queries.");
