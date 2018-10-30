@@ -10,7 +10,7 @@ public class Welcome
 	JFrame frame;
 
 	/**
-	 * Launch the application."jjgkj
+	 * Launch the application.
 	 */
 	public static void main(String[] args)
 	{
